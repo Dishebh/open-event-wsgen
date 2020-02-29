@@ -70,7 +70,7 @@
     "redis": "^2.8.0",
     "request": "^2.74.0",
     "selenium-webdriver": "^3.4.0",
-    "sendgrid": "^5.1.1",
+    "sendgrid": "^5.2.3",
     "sharp": "^0.17.3",
     "socket.io": "^2.0.2",
     "socket.io-stream": "^0.9.1",

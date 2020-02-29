@@ -987,9 +987,9 @@
       }
     },
     "bottleneck": {
-      "version": "1.15.1",
-      "resolved": "https://registry.npmjs.org/bottleneck/-/bottleneck-1.15.1.tgz",
-      "integrity": "sha1-+p/sFj4Bt6bEJrh+YD5lYCX/AUU="
+      "version": "1.16.0",
+      "resolved": "https://registry.npmjs.org/bottleneck/-/bottleneck-1.16.0.tgz",
+      "integrity": "sha1-1s4TgIUnr8gLaQkvFWBmVeWyHxo="
     },
     "brace-expansion": {
       "version": "1.1.7",
@@ -1712,6 +1712,11 @@
         "esutils": "2.0.2"
       }
     },
+    "dotenv": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/dotenv/-/dotenv-4.0.0.tgz",
+      "integrity": "sha1-hk7xN5rO1Vzm+V3r7NzhefegzR0="
+    },
     "double-ended-queue": {
       "version": "2.1.0-0",
       "resolved": "https://registry.npmjs.org/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz",
@@ -1782,7 +1787,7 @@
       "resolved": "https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz",
       "integrity": "sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=",
       "requires": {
-        "iconv-lite": "0.4.15"
+        "iconv-lite": "~0.4.13"
       }
     },
     "end-of-stream": {
@@ -4430,10 +4435,10 @@
       "resolved": "https://registry.npmjs.org/mailparser/-/mailparser-0.6.2.tgz",
       "integrity": "sha1-A8SGA5vfTfbNO2rcqqxBB9/bwGg=",
       "requires": {
-        "encoding": "0.1.12",
-        "mime": "1.3.4",
-        "mimelib": "0.3.0",
-        "uue": "3.1.0"
+        "encoding": "^0.1.12",
+        "mime": "^1.3.4",
+        "mimelib": "^0.3.0",
+        "uue": "^3.1.0"
       }
     },
     "make-error": {
@@ -4537,12 +4542,12 @@
       }
     },
     "mimelib": {
-      "version": "0.3.0",
-      "resolved": "https://registry.npmjs.org/mimelib/-/mimelib-0.3.0.tgz",
-      "integrity": "sha1-SxbUtDVAPa9pK8IniQxxZf896JQ=",
+      "version": "0.3.1",
+      "resolved": "https://registry.npmjs.org/mimelib/-/mimelib-0.3.1.tgz",
+      "integrity": "sha1-eHrdJBXYJ6yzr27EvKHqlZZBiFM=",
       "requires": {
-        "addressparser": "1.0.1",
-        "encoding": "0.1.12"
+        "addressparser": "~1.0.1",
+        "encoding": "~0.1.12"
       }
     },
     "mimic-fn": {
@@ -8848,23 +8853,34 @@
       }
     },
     "sendgrid": {
-      "version": "5.1.1",
-      "resolved": "https://registry.npmjs.org/sendgrid/-/sendgrid-5.1.1.tgz",
-      "integrity": "sha1-1LK2khrOteDI4exeAyYX//tZhyE=",
+      "version": "5.2.3",
+      "resolved": "https://registry.npmjs.org/sendgrid/-/sendgrid-5.2.3.tgz",
+      "integrity": "sha512-FD7oR9TbJFUew1p0Vw9JX0wBetDyq634LzylSXz4n9+hwaf+6a9dNloZl8CcjpsX4NuEc3HJanTN4GjDwNyi4A==",
       "requires": {
-        "async.ensureasync": "0.5.2",
-        "async.queue": "0.5.2",
-        "bottleneck": "1.15.1",
-        "debug": "2.6.8",
-        "lodash.chunk": "4.2.0",
-        "mailparser": "0.6.2",
-        "sendgrid-rest": "2.3.0"
+        "async.ensureasync": "^0.5.2",
+        "async.queue": "^0.5.2",
+        "bottleneck": "^1.12.0",
+        "debug": "^2.2.0",
+        "lodash.chunk": "^4.2.0",
+        "mailparser": "^0.6.1",
+        "sendgrid-rest": "^2.3.0"
       }
     },
     "sendgrid-rest": {
-      "version": "2.3.0",
-      "resolved": "https://registry.npmjs.org/sendgrid-rest/-/sendgrid-rest-2.3.0.tgz",
-      "integrity": "sha1-Zi75WpPHPD4KTnph44gKEMeN0ko="
+      "version": "2.6.0",
+      "resolved": "https://registry.npmjs.org/sendgrid-rest/-/sendgrid-rest-2.6.0.tgz",
+      "integrity": "sha512-J/EeDrEEaoS55zwVWpcslLUP59fT7FvGTSbgD86T40gP8CzEyr+lscEYCQJyYChN/Rki2AiglRLUKKJMSICWRw==",
+      "requires": {
+        "core-js": "^3.5.0",
+        "dotenv": "^4.0.0"
+      },
+      "dependencies": {
+        "core-js": {
+          "version": "3.6.4",
+          "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.6.4.tgz",
+          "integrity": "sha512-4paDGScNgZP2IXXilaffL9X7968RuvwlkK3xWtZRVqgd8SYNiVKRJvkFd1aqqEuPfN7E68ZHEp9hDj6lHj4Hyw=="
+        }
+      }
     },
     "sequencify": {
       "version": "0.0.7",
@@ -9671,11 +9687,12 @@
       "integrity": "sha1-ApT7kiu5N1FTVBxPcJYjHyh8ivg="
     },
     "uue": {
-      "version": "3.1.0",
-      "resolved": "https://registry.npmjs.org/uue/-/uue-3.1.0.tgz",
-      "integrity": "sha1-XWfTcDDmbv67tLiqxG2vm1W++/Y=",
+      "version": "3.1.2",
+      "resolved": "https://registry.npmjs.org/uue/-/uue-3.1.2.tgz",
+      "integrity": "sha512-axKLXVqwtdI/czrjG0X8hyV1KLgeWx8F4KvSbvVCnS+RUvsQMGRjx0kfuZDXXqj0LYvVJmx3B9kWlKtEdRrJLg==",
       "requires": {
-        "extend": "3.0.1"
+        "escape-string-regexp": "~1.0.5",
+        "extend": "~3.0.0"
       }
     },
     "uws": {
